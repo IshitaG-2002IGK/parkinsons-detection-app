@@ -16,18 +16,18 @@ np.set_printoptions(suppress=True)
 # Define the layout of the app
 st.set_page_config(page_title="Parkonix", page_icon=":medical_symbol:")
 
-st.title("Parkonix")
+# st.title("Parkonix")
 
 st.header(
-    "Unveiling Parkinson's with Precision - Accurate detection algorithm trained on spiral and wave sketches."
+    "Utilizing Keras Model for Dynamic Drawing Analysis in predicting Parkinson's Disease : Spiral and Wave Patterns"
 )
 
 st.write(
-    "Try drawing a Spira or Wave and watch how an AI Model will detect the Parkinson Disease."
+    "Draw a Spiral or Wave pattern and detect Parkinson's Disease."
 )
 
 st.caption(
-    "The application will infer the one label out of 2 labels, as follows: Healthy, Parkinson Disease."
+    "The application will infer the one label out of 2 labels, as follows: Healthy, Parkinson's Disease."
 )
 
 # st.warning(
@@ -37,13 +37,12 @@ st.caption(
 with st.sidebar:
     img = Image.open("./Images/parkinson_disease_detection.jpg")
     st.image(img)
-    st.subheader("About Parkonix")
+    st.subheader("Parkinson's Disease Detection")
     link_text = "Distinguishing Different Stages of Parkinson’s Disease Using Composite Index of Speed and Pen-Pressure of Sketching a Spiral"
     link_url = "https://www.frontiersin.org/articles/10.3389/fneur.2017.00435/full"
     st.write(
-        "Parkinson's disease is a neurodegenerative disorder that affects motor functions, leading to tremors, stiffness, and impaired movement. The research presented in the article link mentioned below explores the use of spiral and wave sketch images to develop a robust algorithm for Parkinson's disease detection. Parkonix leverages these sketch images to train an AI model, achieving an impressive accuracy rate of 83%."
+        "Parkinson's disease is a neurodegenerative disorder that affects motor functions, leading to tremors, stiffness, and impaired movement. "
     )
-    st.markdown(f"[{link_text}]({link_url})")
     st.header("Dataset")
     img = Image.open("./Images/healthy_diseased_classification.jpeg")
     st.image(img)
