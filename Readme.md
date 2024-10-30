@@ -57,7 +57,7 @@ Teachable Machine has several features that make it an ideal tool for building c
 ### Step 1: Clone this repository
 Run:
 ```bash
-git clone https://github.com/SaiJeevanPuchakayala/Parkonix
+git clone https://github.com/github-username/Parkonix
 ```
 
 ### Step 2: Navigate to the Parkonix directory
